@@ -175,6 +175,7 @@ aca:
           address: localhost:7054
           server-name: acap
           # Enabling/disabling Attribute Certificate Authority, if ACA is enabled attributes will be added into the TCert.
+          # *? why adding attribute to TCert? TCert should contain as less information as possible.
           enabled: false
 pki:
           ca:

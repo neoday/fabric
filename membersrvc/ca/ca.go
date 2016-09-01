@@ -406,6 +406,7 @@ func (ca *CA) newCertificate(id string, pub interface{}, usage x509.KeyUsage, ex
 	return ca.newCertificateFromSpec(spec)
 }
 
+// *NOTE: core function
 func (ca *CA) newCertificateFromSpec(spec *CertificateSpec) ([]byte, error) {
 	notBefore := spec.GetNotBefore()
 	notAfter := spec.GetNotAfter()
